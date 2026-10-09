@@ -1,0 +1,7 @@
+# Publish only the reviewed standalone app and its documentation.
+/*
+!/.gitignore
+!/index.html
+!/README.md
+!/LICENSE
+!/.nojekyll
