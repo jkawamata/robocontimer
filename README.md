@@ -4,7 +4,7 @@
 
 **公開版：<https://jkawamata.github.io/robocontimer/>**
 
-現在のバージョン：**V1.16**
+現在のバージョン：**V1.17**
 
 1〜3部門のロボコンを、セッティングから次の試合まで一定の周期で進行するタイマーです。HTMLファイル1個で動作し、効果音・BGMも含まれています。
 
@@ -24,6 +24,9 @@
 - 試合中BGM、試合間BGM、ピアノ音は個別にオン・オフを選べます。
 - セッティング中・開始カウント中はBGMを流しません。
 - ピアノ音は次の試合開始まで残り○分の区切りに鳴ります。セッティング開始と重なる時刻には鳴りません。
+- 試合中BGMはオリジナル曲「鋼の翼」。156 BPM、約98秒のループで、金管・弦・低音・打楽器を重ねています。
+
+大会名の入力欄の案内文は半透明で表示します。通常の操作通知は表示せず、設定の不備や動作エラーは「確認」で閉じる中央のダイアログに表示します。
 
 ## MP4書き出し
 
@@ -45,3 +48,5 @@
 作者：**川俣純**
 
 アプリと同梱の効果音・BGM・ピアノ音は、[Creative Commons 表示 4.0 国際（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/deed.ja)で提供します。作者名、ライセンスへのリンク、改変した場合はその旨を表示してください。詳細は[LICENSE](LICENSE)をご覧ください。
+
+試合中BGMの楽器音は [GeneralUser GS 2.0.3](https://www.schristiancollins.com/generaluser)（S. Christian Collins）で録音しています。音楽制作・録音物の公開は[音源の利用条件](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt)で許可されています。HTMLには完成したBGMの録音を内蔵しています。
