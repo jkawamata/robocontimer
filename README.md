@@ -4,7 +4,7 @@
 
 **公開版：<https://jkawamata.github.io/robocontimer/>**
 
-現在のバージョン：**V1.24**
+現在のバージョン：**V1.25**
 
 1〜3部門のロボコンを、セッティングから次の試合まで一定の周期で進行するタイマーです。HTMLファイル1個で動作し、効果音・BGMも含まれています。
 
@@ -25,7 +25,6 @@
 - セッティング中・開始カウント中はBGMを流しません。
 - ピアノ音はグランドピアノの録音サンプルによるド（C5）です。次の試合開始まで残り○分の区切りに鳴ります。セッティング開始と重なる時刻には鳴りません。
 - 試合中BGMは「試合中BGMの曲」で選べます。初期選択はB「鋼の疾走」で、「2025年版に戻す」でもBになります。
-  - A「交錯する機動」：合奏曲（152 BPM・約2分19秒）。
   - B「鋼の疾走」：ギター・ベース・ドラムを軸にした合奏曲（160 BPM・2分）。
   - C「回路のパレード」：シーケンス、シンセベース、電子ドラム、FM音色を組み合わせたオリジナルのテクノポップ（132 BPM・約2分11秒）。
 - 各曲にAメロ・Bメロ・サビ・間奏を設け、曲調に変化をつけています。
@@ -55,4 +54,4 @@
 
 アプリと同梱の効果音・BGM・ピアノ音は、[Creative Commons 表示 4.0 国際（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/deed.ja)で提供します。作者名、ライセンスへのリンク、改変した場合はその旨を表示してください。詳細は[LICENSE](LICENSE)をご覧ください。
 
-試合中BGMのA・Bとピアノ単音の楽器音は [GeneralUser GS 2.0.3](https://www.schristiancollins.com/generaluser)（S. Christian Collins）で録音しています。音楽制作・録音物の公開は[音源の利用条件](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt)で許可されています。C「回路のパレード」はオシレーターとノイズから音を合成したオリジナル曲です。HTMLには完成したBGMとピアノ音の録音を内蔵しています。
+試合中BGMのBとピアノ単音の楽器音は [GeneralUser GS 2.0.3](https://www.schristiancollins.com/generaluser)（S. Christian Collins）で録音しています。音楽制作・録音物の公開は[音源の利用条件](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt)で許可されています。C「回路のパレード」はオシレーターとノイズから音を合成したオリジナル曲です。HTMLには完成したBGMとピアノ音の録音を内蔵しています。
