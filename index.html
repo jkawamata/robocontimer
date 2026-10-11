@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Robocon Timer Maker V1.30</title>
+<title>Robocon Timer Maker V1.31</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M26%2011v7%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2226%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23a589f6%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%2227%22%20width%3D%227%22%20height%3D%2213%22%20rx%3D%223%22%20fill%3D%22%23176c89%22%2F%3E%3Crect%20x%3D%2246%22%20y%3D%2227%22%20width%3D%227%22%20height%3D%2213%22%20rx%3D%223%22%20fill%3D%22%23176c89%22%2F%3E%3Crect%20x%3D%2212%22%20y%3D%2246%22%20width%3D%2211%22%20height%3D%229%22%20rx%3D%224%22%20fill%3D%22%23172c3b%22%2F%3E%3Crect%20x%3D%2234%22%20y%3D%2246%22%20width%3D%2211%22%20height%3D%229%22%20rx%3D%224%22%20fill%3D%22%23172c3b%22%2F%3E%3Crect%20x%3D%229%22%20y%3D%2218%22%20width%3D%2240%22%20height%3D%2230%22%20rx%3D%228%22%20fill%3D%22%2364d9ec%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%222.5%22%2F%3E%3Crect%20x%3D%2217%22%20y%3D%2227%22%20width%3D%226%22%20height%3D%227%22%20rx%3D%222.5%22%20fill%3D%22%23172c3b%22%2F%3E%3Crect%20x%3D%2233%22%20y%3D%2227%22%20width%3D%226%22%20height%3D%227%22%20rx%3D%222.5%22%20fill%3D%22%23172c3b%22%2F%3E%3Cpath%20d%3D%22M21%2040h14%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M48%203v4m-3-4h6%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23fff%22%20stroke%3D%22%2335c694%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M48%2010v6l4%203%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E">
 <style>
 :root{--ink:#172c3b;--muted:#647783;--line:#dce5e9;--paper:#f2f6f7;--blue:#176c89;--cyan:#64d9ec;--purple:#a589f6;--green:#35c694;--red:#d53e51;--radius:14px;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:weight}
@@ -37,7 +37,7 @@
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand"><div class="brandmark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none"><path d="M26 11v7" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="8" r="4" fill="#a589f6"/><rect x="4" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="46" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="12" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="34" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="9" y="18" width="40" height="30" rx="8" fill="#64d9ec" stroke="#176c89" stroke-width="2.5"/><rect x="17" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><rect x="33" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><path d="M21 40h14" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><path d="M48 3v4m-3-4h6" stroke="#176c89" stroke-width="2.5" stroke-linecap="round"/><circle cx="48" cy="16" r="11" fill="#fff" stroke="#35c694" stroke-width="3"/><path d="M48 10v6l4 3" stroke="#176c89" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h1><button id="help" class="brand-title" title="使い方を開く" aria-label="Robocon Timer Maker の使い方" aria-haspopup="dialog">Robocon Timer Maker<span class="version">V1.30</span></button></h1><p class="subtitle">タイマーに進行を合わせて、ロボコン大会を盛り上げよう！</p></div></div><div class="top-actions"><button id="externalInfo" class="small" aria-haspopup="dialog">ⓘ 外部通信・ライセンス</button><button id="topFullscreen" class="small">全画面にする</button></div></header>
+<header class="topbar"><div class="brand"><div class="brandmark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none"><path d="M26 11v7" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="8" r="4" fill="#a589f6"/><rect x="4" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="46" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="12" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="34" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="9" y="18" width="40" height="30" rx="8" fill="#64d9ec" stroke="#176c89" stroke-width="2.5"/><rect x="17" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><rect x="33" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><path d="M21 40h14" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><path d="M48 3v4m-3-4h6" stroke="#176c89" stroke-width="2.5" stroke-linecap="round"/><circle cx="48" cy="16" r="11" fill="#fff" stroke="#35c694" stroke-width="3"/><path d="M48 10v6l4 3" stroke="#176c89" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h1><button id="help" class="brand-title" title="使い方を開く" aria-label="Robocon Timer Maker の使い方" aria-haspopup="dialog">Robocon Timer Maker<span class="version">V1.31</span></button></h1><p class="subtitle">タイマーに進行を合わせて、ロボコン大会を盛り上げよう！</p></div></div><div class="top-actions"><button id="externalInfo" class="small" aria-haspopup="dialog">ⓘ 外部通信・ライセンス</button><button id="topFullscreen" class="small">全画面にする</button></div></header>
 <main class="layout">
 <div class="preview-column">
 <section class="panel" aria-label="タイマー表示">
@@ -55,12 +55,11 @@
 </div>
 <aside class="settings" aria-label="タイマー設定"><fieldset id="settingsFields"><div class="settings-stack">
 <section id="settingsLibrary" class="panel settings-library"><div class="section"><h2 class="section-title">設定の登録・呼び出し</h2>
-<div class="preset-row"><label class="field" for="settingName">設定名<input id="settingName" type="text" maxlength="40" placeholder="例：地区大会"></label><button id="saveSetting" type="button" disabled>登録</button></div>
+<div class="preset-row"><label class="field" for="tournament">大会名（設定名）<input id="tournament" type="text" maxlength="80" placeholder="大会名（設定名）を入力（空欄なら非表示）"></label><button id="saveSetting" type="button" disabled>登録</button></div>
 <label class="field" for="savedSettings" style="margin-top:12px">登録済みの設定<select id="savedSettings" disabled><option value="">登録した設定はありません</option></select></label>
 <div class="save-controls"><button id="loadSetting" type="button" disabled>読み込む</button><button id="deleteSetting" type="button" class="danger" disabled>削除</button></div>
 <p class="note">設定は自動保存され、次回も引き継がれます。</p></div></section>
-<section class="panel config-main"><div class="section"><h2 class="section-title">大会名</h2><label class="field"><span class="sr-only">画面上部に表示する大会名</span><input id="tournament" type="text" maxlength="80" placeholder="大会名を入力（空欄なら非表示）"></label></div>
-<div class="section"><h2 class="section-title">試合の進行<button id="preset2025" type="button" class="small">2025年版に戻す</button></h2><div class="field"><label for="cycleMin">試合開始から次の試合開始まで</label><div class="row"><div class="unit-input"><input id="cycleMin" type="number" min="0" max="180" step="1" value="8" aria-label="試合開始間隔の分"><span>分</span></div><div class="unit-input"><input id="cycleSec" type="number" min="0" max="59" step="1" value="0" aria-label="試合開始間隔の秒"><span>秒</span></div></div><span class="hint">セッティング時間が変わっても、待機時間を調整して開始間隔を保ちます。</span></div><div class="grid2" style="margin-top:14px"><label class="field">共通の開始カウント<div class="unit-input"><input id="countdown" type="number" min="0" max="300" value="30"><span>秒</span></div></label><label class="field">終了表示を残す時間<div class="unit-input"><input id="hold" type="number" min="0" max="600" value="30"><span>秒</span></div></label></div><label class="checkline" style="margin-top:14px"><input id="repeat" type="checkbox" checked>次の試合へ自動で繰り返す</label></div>
+<section class="panel config-main"><div class="section"><h2 class="section-title">試合の進行<button id="preset2025" type="button" class="small">2025年版に戻す</button></h2><div class="field"><label for="cycleMin">試合開始から次の試合開始まで</label><div class="row"><div class="unit-input"><input id="cycleMin" type="number" min="0" max="180" step="1" value="8" aria-label="試合開始間隔の分"><span>分</span></div><div class="unit-input"><input id="cycleSec" type="number" min="0" max="59" step="1" value="0" aria-label="試合開始間隔の秒"><span>秒</span></div></div><span class="hint">セッティング時間が変わっても、待機時間を調整して開始間隔を保ちます。</span></div><div class="grid2" style="margin-top:14px"><label class="field">共通の開始カウント<div class="unit-input"><input id="countdown" type="number" min="0" max="300" value="30"><span>秒</span></div></label><label class="field">終了表示を残す時間<div class="unit-input"><input id="hold" type="number" min="0" max="600" value="30"><span>秒</span></div></label></div><label class="checkline" style="margin-top:14px"><input id="repeat" type="checkbox" checked>次の試合へ自動で繰り返す</label></div>
 <div class="section"><h2 class="section-title">使用する部門<span class="note">1〜3部門</span></h2><div id="laneEditors"></div><p class="note" style="margin:11px 0 0">使用する全部門が、共通の開始カウント終了と同時に試合を開始します。</p></div>
 </section>
 </div><div class="settings-stack"><section class="panel"><details class="section" open><summary>文字と表示</summary><div class="grid2"><label class="field">文字の太さ<select id="weight"><option value="400">標準</option><option value="700" selected>太字</option><option value="900">極太</option></select></label><label class="field">書体<select id="font"><option value="gothic">ゴシック</option><option value="rounded">丸ゴシック</option><option value="mono">等幅</option></select></label></div><label class="checkline" style="margin-top:14px"><input id="autoSize" type="checkbox" checked>文字サイズを自動調整する</label><label id="manualSize" class="field manual-size" hidden><span class="line"><span>文字の大きさ</span><output id="scaleLabel">100%</output></span><input id="scale" type="range" min="60" max="140" value="100"></label></details></section>
@@ -68,7 +67,7 @@
 
 <section class="panel"><div class="section"><h2 class="section-title">BGMと分の合図</h2><div class="music-options"><label class="checkline"><input id="bgmMatchEnabled" type="checkbox" checked>試合中BGM</label><label class="checkline"><input id="bgmIntervalEnabled" type="checkbox" checked>試合間BGM</label><label class="checkline" title="試合間に1分ごとにピアノ音"><input id="minutePiano" type="checkbox" checked aria-label="試合間に1分ごとにピアノ音">ピアノ音</label></div><label class="field" style="margin-top:13px">試合中BGMの曲<select id="bgmMatchTrack"><option value="B" selected>鋼の疾走</option><option value="C">回路のパレード</option></select></label><label class="field" style="margin-top:13px"><span class="line"><span>試合中BGMの音量</span><output id="bgmMatchVolumeLabel">35%</output></span><input id="bgmMatchVolume" aria-label="試合中BGMの音量" type="range" min="0" max="100" value="35"></label><label class="field" style="margin-top:13px"><span class="line"><span>試合間BGMの音量</span><output id="bgmIntervalVolumeLabel">15%</output></span><input id="bgmIntervalVolume" aria-label="試合間BGMの音量" type="range" min="0" max="100" value="15"></label><label class="field" style="margin-top:13px"><span class="line"><span>ピアノ音の音量</span><output id="pianoVolumeLabel">35%</output></span><input id="pianoVolume" aria-label="ピアノ音の音量" type="range" min="0" max="100" value="35"></label><p class="note" style="margin:6px 0 0">次の開始まで残り○分の区切りに鳴ります。</p><div class="sounds"><button type="button" data-music="match">試合中BGM ▶</button><button type="button" data-music="interval">試合間BGM ▶</button><button type="button" data-music="piano">ピアノ音 ▶</button><button type="button" id="stopMusicAudition">試聴停止 ■</button></div><div id="musicStatus" class="note" role="status" style="margin-top:9px">BGM待機中</div></div></section></div></fieldset></aside>
 </main>
-<footer class="footer"><span>Robocon Timer Maker V1.30 · インターネット接続不要</span><span>タブを離れた場合や画面更新が長く止まった場合は、自動で一時停止します。</span></footer>
+<footer class="footer"><span>Robocon Timer Maker V1.31 · インターネット接続不要</span><span>タブを離れた場合や画面更新が長く止まった場合は、自動で一時停止します。</span></footer>
 
 <dialog id="settingsConfirm" class="info-dialog" aria-labelledby="settingsConfirmTitle" aria-describedby="settingsConfirmMessage"><h2 id="settingsConfirmTitle">登録設定の確認</h2><p id="settingsConfirmMessage"></p><div class="info-actions"><form method="dialog"><button id="settingsConfirmCancel" value="cancel" autofocus>キャンセル</button><button id="settingsConfirmOK" value="ok" class="primary">確認</button></form></div></dialog>
 <dialog id="errorDialog" class="info-dialog" role="alertdialog" aria-labelledby="errorDialogTitle" aria-describedby="errorDialogMessage">
@@ -99,10 +98,10 @@
 <dialog id="helpDialog" class="info-dialog help-dialog" aria-labelledby="helpTitle">
 <h2 id="helpTitle">Robocon Timer Maker — 使い方</h2>
 <ol class="help-steps">
-<li><strong>大会名と部門を設定</strong><p>大会名と使用する部門（1〜3部門）を選び、部門名・セッティング時間・試合時間を設定します。</p></li>
+<li><strong>大会名と部門を設定</strong><p>「大会名（設定名）」に入力した名前を、タイマー画面の左上に表示します。空欄なら非表示です。使用する部門（1〜3部門）を選び、部門名・セッティング時間・試合時間を設定します。</p></li>
 <li><strong>大会の進行を設定</strong><p>試合の開始間隔と共通カウントを設定します。全部門が共通カウント終了時に同時スタートし、次の試合までの待機時間は自動で調整されます。</p></li>
 <li><strong>音を調整</strong><p>効果音・試合中BGM・試合間BGM・ピアノ音の音量を個別に調整します。BGMとピアノ音はオン・オフを選べ、▶で試聴できます。</p></li>
-<li><strong>設定を登録・呼び出し</strong><p>設定名を入力して「登録」を押すと保存できます。一覧で選んで「読み込む」で呼び出せます。同名の上書きと削除には確認が表示されます。登録した内容は、通常の設定変更では書き換わりません。</p></li>
+<li><strong>設定を登録・呼び出し</strong><p>「大会名（設定名）」を入力して「登録」を押すと、同じ名前で設定を保存できます。一覧で選んで「読み込む」で呼び出せます。同名の上書きと削除には確認が表示されます。登録した内容は、通常の設定変更では書き換わりません。</p></li>
 <li><strong>タイマーで進行</strong><p>「進行を開始」でスタート。一時停止・再開、バーでの位置移動、全画面表示ができます。繰り返しをオンにすると次の試合へ自動で進みます。</p></li>
 <li><strong>MP4を書き出す</strong><p>「MP4を書き出す」で1周期分を作成し、完了後に保存します。再生時間と同じ時間がかかるため、このタブを開いたままお待ちください。</p></li>
 </ol>
@@ -114,7 +113,7 @@
 (()=>{'use strict';
 const DEFAULT={schemaVersion:1,tournament:'',cycle:480,countdown:30,hold:30,repeat:true,weight:700,font:'gothic',autoSize:true,scale:100,soundMode:'original',volume:35,warning:5,bgmMatchEnabled:true,bgmIntervalEnabled:true,bgmMatchTrack:'B',bgmMatchVolume:35,bgmIntervalVolume:15,pianoVolume:35,minutePiano:true,lanes:[{enabled:true,name:'基礎',setup:30,match:90,color:'#64d9ec'},{enabled:true,name:'制御',setup:20,match:90,color:'#a589f6'},{enabled:true,name:'応用',setup:0,match:150,color:'#35c694'}]};
 const clone=o=>JSON.parse(JSON.stringify(o));
-function validate(c){const errors=[];const integer=(v,min,max)=>Number.isInteger(v)&&v>=min&&v<=max;if(!c||typeof c!=='object'||Array.isArray(c))return ['設定ファイルの形式が正しくありません。'];if(typeof c.tournament!=='string'||c.tournament.length>80)errors.push('大会名は80文字以内で入力してください。');if(c.schemaVersion!==1)errors.push('設定ファイルのバージョンに対応していません。');if(!integer(c.cycle,1,10800))errors.push('開始間隔は1秒〜180分の整数で指定してください。');if(!integer(c.countdown,0,300)||!integer(c.hold,0,600))errors.push('開始カウントは0〜300秒、終了表示は0〜600秒で指定してください。');if(!Array.isArray(c.lanes)||c.lanes.length!==3)return [...errors,'部門設定は3件必要です。'];if(!c.lanes.some(l=>l?.enabled===true))errors.push('使用する部門を1つ以上選んでください。');c.lanes.forEach((l,i)=>{if(!l||typeof l!=='object'||Array.isArray(l)){errors.push('部門設定の形式が不正です。');return;}if(typeof l.enabled!=='boolean')errors.push('部門の有効・無効が不正です。');if(typeof l.name!=='string'||!l.name.trim()||l.name.length>48)errors.push(`部門${i+1}の名前を1〜48文字で入力してください。`);if(!integer(l.setup,0,600)||!integer(l.match,1,3600))errors.push(`部門${i+1}：セッティングは0〜600秒、試合は1〜3600秒にしてください。`);if(!/^#[0-9a-f]{6}$/i.test(l.color))errors.push('部門の色が不正です。');});if(![400,700,900].includes(c.weight)||!['gothic','rounded','mono'].includes(c.font)||typeof c.autoSize!=='boolean'||!integer(c.scale,60,140))errors.push('文字設定が不正です。');if(!['original','strong','gentle'].includes(c.soundMode)||!integer(c.volume,0,100)||!integer(c.warning,0,120))errors.push('音の設定が不正です。');if(!['B','C'].includes(c.bgmMatchTrack??'B')||typeof c.bgmMatchEnabled!=='boolean'||typeof c.bgmIntervalEnabled!=='boolean'||typeof c.minutePiano!=='boolean'||!['bgmMatchVolume','bgmIntervalVolume','pianoVolume'].every(k=>integer(c[k],0,100)))errors.push('BGMの設定が不正です。');if(typeof c.repeat!=='boolean')errors.push('繰り返し設定が不正です。');if(!errors.length){const p=plan(c);if(p.idle<0)errors.push(`開始間隔が${-p.idle}秒足りません。現在の設定では最低${p.required}秒（${Math.floor(p.required/60)}分${p.required%60}秒）が必要です。`);}return errors;}
+function validate(c){const errors=[];const integer=(v,min,max)=>Number.isInteger(v)&&v>=min&&v<=max;if(!c||typeof c!=='object'||Array.isArray(c))return ['設定ファイルの形式が正しくありません。'];if(typeof c.tournament!=='string'||c.tournament.length>80)errors.push('大会名（設定名）は80文字以内で入力してください。');if(c.schemaVersion!==1)errors.push('設定ファイルのバージョンに対応していません。');if(!integer(c.cycle,1,10800))errors.push('開始間隔は1秒〜180分の整数で指定してください。');if(!integer(c.countdown,0,300)||!integer(c.hold,0,600))errors.push('開始カウントは0〜300秒、終了表示は0〜600秒で指定してください。');if(!Array.isArray(c.lanes)||c.lanes.length!==3)return [...errors,'部門設定は3件必要です。'];if(!c.lanes.some(l=>l?.enabled===true))errors.push('使用する部門を1つ以上選んでください。');c.lanes.forEach((l,i)=>{if(!l||typeof l!=='object'||Array.isArray(l)){errors.push('部門設定の形式が不正です。');return;}if(typeof l.enabled!=='boolean')errors.push('部門の有効・無効が不正です。');if(typeof l.name!=='string'||!l.name.trim()||l.name.length>48)errors.push(`部門${i+1}の名前を1〜48文字で入力してください。`);if(!integer(l.setup,0,600)||!integer(l.match,1,3600))errors.push(`部門${i+1}：セッティングは0〜600秒、試合は1〜3600秒にしてください。`);if(!/^#[0-9a-f]{6}$/i.test(l.color))errors.push('部門の色が不正です。');});if(![400,700,900].includes(c.weight)||!['gothic','rounded','mono'].includes(c.font)||typeof c.autoSize!=='boolean'||!integer(c.scale,60,140))errors.push('文字設定が不正です。');if(!['original','strong','gentle'].includes(c.soundMode)||!integer(c.volume,0,100)||!integer(c.warning,0,120))errors.push('音の設定が不正です。');if(!['B','C'].includes(c.bgmMatchTrack??'B')||typeof c.bgmMatchEnabled!=='boolean'||typeof c.bgmIntervalEnabled!=='boolean'||typeof c.minutePiano!=='boolean'||!['bgmMatchVolume','bgmIntervalVolume','pianoVolume'].every(k=>integer(c[k],0,100)))errors.push('BGMの設定が不正です。');if(typeof c.repeat!=='boolean')errors.push('繰り返し設定が不正です。');if(!errors.length){const p=plan(c);if(p.idle<0)errors.push(`開始間隔が${-p.idle}秒足りません。現在の設定では最低${p.required}秒（${Math.floor(p.required/60)}分${p.required%60}秒）が必要です。`);}return errors;}
 function plan(c){const lanes=c.lanes.filter(l=>l.enabled);const setup=Math.max(0,...lanes.map(l=>l.setup)),match=Math.max(0,...lanes.map(l=>l.match));const pre=setup+c.countdown,finish=pre+match,wait=finish+c.hold,required=wait;return {lanes,setup,match,pre,finish,wait,required,idle:c.cycle-required,cycle:c.cycle};}
 function stateAt(c,elapsed){const p=plan(c);const done=!c.repeat&&elapsed>=c.cycle;const round=Math.floor(Math.max(0,elapsed)/c.cycle)+1,t=done?c.cycle:Math.max(0,elapsed)%c.cycle;let phase;if(done)phase='done';else if(t<p.setup)phase='setup';else if(t<p.pre)phase='countdown';else if(t<p.finish)phase='match';else if(t<p.wait)phase='hold';else phase='wait';return {...p,t,phase,matchStarted:!done&&t>=p.pre,matchElapsed:t-p.pre,round:done?1:round,nextStart:done?0:phase==='setup'||phase==='countdown'?p.pre-t:c.cycle-t+(c.repeat?p.pre:0),elapsed,done};}
 function cycleEvents(c){const p=plan(c),raw=[];const add=(time,kind)=>{if(time>=0&&time<=c.cycle&&!raw.some(e=>e.time===time&&e.kind===kind))raw.push({time,kind});};if(p.setup>0)add(0,'setup');p.lanes.forEach(l=>{if(l.setup>0)add(l.setup,'setupEnd');});for(let s=3;s>=1;s--)if(s<=c.countdown)add(p.pre-s,'tick');add(p.pre,'start');p.lanes.forEach(l=>{if(c.warning>0&&l.match>c.warning)add(p.pre+l.match-c.warning,'warning');add(p.pre+l.match,'end');});if(c.minutePiano&&c.repeat){for(let minute=1;minute*60<c.cycle+p.pre;minute++){const time=c.cycle+p.pre-minute*60;if(time>p.finish&&time<c.cycle)add(time,'piano');}if(c.repeat){for(let minute=1;minute*60<=p.pre;minute++){const time=p.pre-minute*60;add(time,'piano');raw.find(e=>e.time===time&&e.kind==='piano').afterFirst=true;}}}const setupStarts=new Set(raw.filter(e=>e.kind==='setup').map(e=>e.time));return raw.filter(e=>e.kind!=='piano'||!setupStarts.has(e.time)).sort((a,b)=>a.time-b.time);}
@@ -149,7 +148,7 @@ function checkedConfig(value){
  result.lanes=result.lanes.map(l=>({enabled:l.enabled,name:l.name,setup:l.setup,match:l.match,color:l.color}));
  return result;
 }
-function checkedName(value){const name=typeof value==='string'?value.trim():'';if(!name||name.length>40)throw Error('設定名を1〜40文字で入力してください。');return name;}
+function checkedName(value){const name=typeof value==='string'?value.trim():'';if(!name||name.length>80)throw Error('大会名（設定名）を1〜80文字で入力してください。');return name;}
 class SettingsStore{
  constructor(getStorage){this.getStorage=getStorage;}
  read(key){const raw=this.getStorage().getItem(key);if(raw===null)return null;const value=JSON.parse(raw);if(!value||value.version!==1)throw Error('保存データの形式に対応していません。');return value;}
@@ -161,14 +160,21 @@ class SettingsStore{
   if(!Array.isArray(data.items))throw Error('登録された設定の一覧を読み込めません。');
   const names=new Set();return data.items.map(item=>{if(!item||typeof item!=='object')throw Error('登録された設定を読み込めません。');const name=checkedName(item.name);if(names.has(name))throw Error('登録された設定の名前が重複しています。');names.add(name);return {name,config:checkedConfig(item.config)};});
  }
- get(name){const item=this.list().find(item=>item.name===name);if(!item)throw Error('この設定は削除されたか、名前が変更されています。');return item.config;}
+ writePresets(items){const existing=this.read(KEYS.presets);this.write(KEYS.presets,{version:1,defaultsVersion:existing?.defaultsVersion??0,items});}
+ ensureDefaults(){
+  const data=this.read(KEYS.presets),items=this.list();if(data?.defaultsVersion===1)return items;
+  const name='2025年度版';if(!items.some(item=>item.name===name))items.unshift({name,config:{...Core.clone(Core.DEFAULT),tournament:name}});
+  this.write(KEYS.presets,{version:1,defaultsVersion:1,items});return items;
+ }
+ get(name){const item=this.list().find(item=>item.name===name);if(!item)throw Error('この設定は削除されたか、名前が変更されています。');return {...item.config,tournament:item.name};}
  save(name,config,overwrite=false){
   name=checkedName(name);const safe=checkedConfig(config),items=this.list(),index=items.findIndex(item=>item.name===name);
+  safe.tournament=name;
   if(index>=0&&!overwrite){const error=Error('同じ名前の設定が登録されています。');error.code='duplicate';throw error;}
   if(index<0)items.push({name,config:safe});else items[index]={name,config:safe};
-  this.write(KEYS.presets,{version:1,items});return items;
+  this.writePresets(items);return items;
  }
- remove(name){const items=this.list();if(!items.some(item=>item.name===name))throw Error('この設定はすでに削除されています。');const next=items.filter(item=>item.name!==name);this.write(KEYS.presets,{version:1,items:next});return next;}
+ remove(name){const items=this.list();if(!items.some(item=>item.name===name))throw Error('この設定はすでに削除されています。');const next=items.filter(item=>item.name!==name);this.writePresets(next);return next;}
 }
 globalThis.RoboconTimerSettings={SettingsStore,KEYS,checkedConfig,checkedName};
 })();
@@ -182,7 +188,7 @@ const settingsStore=new RoboconTimerSettings.SettingsStore(()=>window.localStora
 let presetItems=[],lastSavedConfig='',autoSaveErrorShown=false;
 const bootSettingsErrors=[];
 try{const saved=settingsStore.last();if(saved)config=saved;lastSavedConfig=JSON.stringify(config);}catch{bootSettingsErrors.push('前回の設定を読み込めなかったため、初期設定で起動しました。');lastSavedConfig=JSON.stringify(config);}
-try{presetItems=settingsStore.list();}catch{bootSettingsErrors.push('登録した設定の一覧を読み込めませんでした。保存済みデータは変更していません。');}
+try{presetItems=settingsStore.ensureDefaults();}catch{bootSettingsErrors.push('登録した設定の一覧を読み込めませんでした。保存済みデータは変更していません。');}
 function persistSettings(){
  if(Core.validate(config).length)return;
  const serialized=JSON.stringify(config);if(serialized===lastSavedConfig)return;
@@ -190,8 +196,8 @@ function persistSettings(){
  catch{if(!autoSaveErrorShown){autoSaveErrorShown=true;notify('設定を自動保存できませんでした。ブラウザーの保存許可と空き容量を確認してください。タイマーは現在の設定で使用できます。','error');}}
 }
 function presetControls(){
- const locked=starting||exportJob||mode!=='ready',name=$('settingName').value.trim(),selected=$('savedSettings').value;
- $('settingName').disabled=!!locked;$('saveSetting').disabled=!!locked||!name;
+ const locked=starting||exportJob||mode!=='ready',name=$('tournament').value.trim(),selected=$('savedSettings').value;
+ $('tournament').disabled=!!locked;$('saveSetting').disabled=!!locked||!name;
  $('saveSetting').textContent=presetItems.some(item=>item.name===name)?'上書き登録':'登録';
  $('savedSettings').disabled=!!locked||presetItems.length===0;
  for(const id of ['loadSetting','deleteSetting'])$(id).disabled=!!locked||!selected;
@@ -206,25 +212,25 @@ function askSettingAction(message,buttonText){
  const dialog=$('settingsConfirm');$('settingsConfirmMessage').textContent=message;$('settingsConfirmOK').textContent=buttonText;dialog.returnValue='';
  return new Promise(resolve=>{dialog.addEventListener('close',()=>resolve(dialog.returnValue==='ok'),{once:true});dialog.showModal();$('settingsConfirmCancel').focus();});
 }
-$('settingName').addEventListener('input',presetControls);
-$('savedSettings').addEventListener('change',()=>{if($('savedSettings').value)$('settingName').value=$('savedSettings').value;presetControls();});
+$('tournament').addEventListener('input',presetControls);
+$('savedSettings').addEventListener('change',presetControls);
 $('saveSetting').addEventListener('click',async()=>{
  if(mode!=='ready'||starting||exportJob||!updateConfig(true))return;
  try{
-  const name=RoboconTimerSettings.checkedName($('settingName').value),snapshot=Core.clone(config);let overwrite=false;
+  const name=RoboconTimerSettings.checkedName($('tournament').value),snapshot=Core.clone(config);let overwrite=false;
   if(settingsStore.list().some(item=>item.name===name)){overwrite=await askSettingAction('「'+name+'」を現在の設定で上書きしますか？','上書き登録');if(!overwrite)return;}
-  presetItems=settingsStore.save(name,snapshot,overwrite);$('settingName').value=name;renderPresets(name);
+  presetItems=settingsStore.save(name,snapshot,overwrite);$('tournament').value=name;persistSettings();renderPresets(name);
  }catch(e){notify('設定を登録できませんでした。'+e.message,'error');}
 });
 $('loadSetting').addEventListener('click',()=>{
  if(mode!=='ready'||starting||exportJob)return;
- try{const name=$('savedSettings').value,next=settingsStore.get(name);auditionRequest++;audio.stop(0,true);config=next;elapsed=0;lastPhase='';configErrors=[];setForm();updateConfig();persistSettings();$('settingName').value=name;updateControls();}
+ try{const name=$('savedSettings').value,next=settingsStore.get(name);auditionRequest++;audio.stop(0,true);config=next;elapsed=0;lastPhase='';configErrors=[];setForm();updateConfig();persistSettings();updateControls();}
  catch(e){notify('設定を読み込めませんでした。'+e.message,'error');}
 });
 $('deleteSetting').addEventListener('click',async()=>{
  if(mode!=='ready'||starting||exportJob)return;const name=$('savedSettings').value;if(!name)return;
  if(!await askSettingAction('登録した「'+name+'」を削除しますか？ 現在のタイマー設定はそのまま残ります。','削除'))return;
- try{presetItems=settingsStore.remove(name);$('settingName').value='';renderPresets('');}
+ try{presetItems=settingsStore.remove(name);renderPresets('');}
  catch(e){notify('設定を削除できませんでした。'+e.message,'error');}
 });
 window.addEventListener('storage',event=>{if(event.key===RoboconTimerSettings.KEYS.presets){try{refreshPresets();}catch{notify('別のタブで変更された登録設定を読み込めませんでした。','error');}}});
@@ -327,7 +333,7 @@ async function startExport(){
   elapsed=0;lastPhase='';draw();
   const video=canvas.captureStream(30),stream=new MediaStream([...video.getVideoTracks(),...audio.recordDestination.stream.getAudioTracks().map(t=>t.clone())]);
   let recorder;try{recorder=new MediaRecorder(stream,{mimeType:exportMime,videoBitsPerSecond:4500000,audioBitsPerSecond:192000});}catch(e){stream.getTracks().forEach(t=>t.stop());throw e;}
-  const job=exportJob={recorder,stream,chunks:[],cancelled:false,done:false,fileName:'Robocon_Timer_V1.30_'+Math.floor(config.cycle/60)+'m'+(config.cycle%60)+'s.mp4'};
+  const job=exportJob={recorder,stream,chunks:[],cancelled:false,done:false,fileName:'Robocon_Timer_V1.31_'+Math.floor(config.cycle/60)+'m'+(config.cycle%60)+'s.mp4'};
   recorder.ondataavailable=e=>{if(e.data.size)job.chunks.push(e.data);};
   recorder.onerror=()=>cancelExport('MP4の書き出しに失敗しました。ブラウザーの対応状況と空きメモリーを確認してください。');
   recorder.onstop=()=>{
@@ -399,7 +405,7 @@ document.querySelectorAll('[data-sound]').forEach(b=>b.addEventListener('click',
 $('stopAudition').addEventListener('click',()=>{auditionRequest++;audio.stop(0,true);notify('試聴を停止しました。');});
 
 async function onSettingChange(e){
- if(exportJob||e.target.closest('#settingsLibrary'))return;
+ if(exportJob||(e.target.closest('#settingsLibrary')&&e.target.id!=='tournament'))return;
  if(mode==='running'||mode==='paused'){
   if(!['bgmMatchEnabled','bgmIntervalEnabled','bgmMatchVolume','bgmIntervalVolume','pianoVolume','minutePiano','volume','bgmMatchTrack'].includes(e.target.id))return;
   config.bgmMatchTrack=$('bgmMatchTrack').value;config.bgmMatchEnabled=$('bgmMatchEnabled').checked;config.bgmIntervalEnabled=$('bgmIntervalEnabled').checked;config.minutePiano=$('minutePiano').checked;for(const key of ['bgmMatchVolume','bgmIntervalVolume','pianoVolume'])config[key]=Number($(key).value);config.volume=Number($('volume').value);decorate();persistSettings();
@@ -435,7 +441,7 @@ if(bootSettingsErrors.length)setTimeout(()=>notify(bootSettingsErrors.join('\n')
  // A downloaded application must not embed the user's registered setting names.
  const savedPlaceholder=document.createElement('option');savedPlaceholder.value='';savedPlaceholder.textContent='登録した設定はありません';
  sourceDocument.querySelector('#savedSettings').replaceChildren(savedPlaceholder);
- const savedName=sourceDocument.querySelector('#settingName');savedName.value='';savedName.removeAttribute('value');
+ const savedName=sourceDocument.querySelector('#tournament');savedName.value='';savedName.removeAttribute('value');
  for(const id of ['errorDialogMessage','settingsConfirmMessage'])sourceDocument.querySelector('#'+id).textContent='';
  sourceDocument.querySelectorAll('dialog').forEach(item=>item.removeAttribute('open'));
  const appSource='<!DOCTYPE html>\n'+sourceDocument.outerHTML;
@@ -452,7 +458,7 @@ if(bootSettingsErrors.length)setTimeout(()=>notify(bootSettingsErrors.join('\n')
  });
  document.getElementById('downloadApp').addEventListener('click',()=>{
   const url=URL.createObjectURL(new Blob([appSource],{type:'text/html;charset=utf-8'}));
-  const link=document.createElement('a');link.href=url;link.download='ロボコンタイマー_V1.30.html';
+  const link=document.createElement('a');link.href=url;link.download='ロボコンタイマー_V1.31.html';
   document.body.append(link);link.click();link.remove();
   setTimeout(()=>URL.revokeObjectURL(url),60000);
  });
