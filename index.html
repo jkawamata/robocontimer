@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Robocon Timer Maker V1.36</title>
+<title>Robocon Timer Maker V1.37</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M26%2011v7%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2226%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23a589f6%22%2F%3E%3Crect%20x%3D%224%22%20y%3D%2227%22%20width%3D%227%22%20height%3D%2213%22%20rx%3D%223%22%20fill%3D%22%23176c89%22%2F%3E%3Crect%20x%3D%2246%22%20y%3D%2227%22%20width%3D%227%22%20height%3D%2213%22%20rx%3D%223%22%20fill%3D%22%23176c89%22%2F%3E%3Crect%20x%3D%2212%22%20y%3D%2246%22%20width%3D%2211%22%20height%3D%229%22%20rx%3D%224%22%20fill%3D%22%23172c3b%22%2F%3E%3Crect%20x%3D%2234%22%20y%3D%2246%22%20width%3D%2211%22%20height%3D%229%22%20rx%3D%224%22%20fill%3D%22%23172c3b%22%2F%3E%3Crect%20x%3D%229%22%20y%3D%2218%22%20width%3D%2240%22%20height%3D%2230%22%20rx%3D%228%22%20fill%3D%22%2364d9ec%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%222.5%22%2F%3E%3Crect%20x%3D%2217%22%20y%3D%2227%22%20width%3D%226%22%20height%3D%227%22%20rx%3D%222.5%22%20fill%3D%22%23172c3b%22%2F%3E%3Crect%20x%3D%2233%22%20y%3D%2227%22%20width%3D%226%22%20height%3D%227%22%20rx%3D%222.5%22%20fill%3D%22%23172c3b%22%2F%3E%3Cpath%20d%3D%22M21%2040h14%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M48%203v4m-3-4h6%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2216%22%20r%3D%2211%22%20fill%3D%22%23fff%22%20stroke%3D%22%2335c694%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M48%2010v6l4%203%22%20stroke%3D%22%23176c89%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E">
 <style>
 :root{--ink:#172c3b;--muted:#647783;--line:#dce5e9;--paper:#f2f6f7;--blue:#176c89;--cyan:#64d9ec;--purple:#a589f6;--green:#35c694;--red:#d53e51;--radius:14px;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:weight}
@@ -37,7 +37,7 @@
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand"><div class="brandmark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none"><path d="M26 11v7" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="8" r="4" fill="#a589f6"/><rect x="4" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="46" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="12" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="34" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="9" y="18" width="40" height="30" rx="8" fill="#64d9ec" stroke="#176c89" stroke-width="2.5"/><rect x="17" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><rect x="33" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><path d="M21 40h14" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><path d="M48 3v4m-3-4h6" stroke="#176c89" stroke-width="2.5" stroke-linecap="round"/><circle cx="48" cy="16" r="11" fill="#fff" stroke="#35c694" stroke-width="3"/><path d="M48 10v6l4 3" stroke="#176c89" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h1><button id="help" class="brand-title" title="使い方を開く" aria-label="Robocon Timer Maker の使い方" aria-haspopup="dialog">Robocon Timer Maker<span class="version">V1.36</span></button></h1><p class="subtitle">タイマーに進行を合わせて、ロボコン大会を盛り上げよう！</p></div></div><div class="top-actions"><button id="externalInfo" class="small" aria-haspopup="dialog">ⓘ 外部通信・ライセンス</button><button id="topFullscreen" class="small">全画面にする</button></div></header>
+<header class="topbar"><div class="brand"><div class="brandmark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none"><path d="M26 11v7" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="8" r="4" fill="#a589f6"/><rect x="4" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="46" y="27" width="7" height="13" rx="3" fill="#176c89"/><rect x="12" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="34" y="46" width="11" height="9" rx="4" fill="#172c3b"/><rect x="9" y="18" width="40" height="30" rx="8" fill="#64d9ec" stroke="#176c89" stroke-width="2.5"/><rect x="17" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><rect x="33" y="27" width="6" height="7" rx="2.5" fill="#172c3b"/><path d="M21 40h14" stroke="#176c89" stroke-width="3" stroke-linecap="round"/><path d="M48 3v4m-3-4h6" stroke="#176c89" stroke-width="2.5" stroke-linecap="round"/><circle cx="48" cy="16" r="11" fill="#fff" stroke="#35c694" stroke-width="3"/><path d="M48 10v6l4 3" stroke="#176c89" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h1><button id="help" class="brand-title" title="使い方を開く" aria-label="Robocon Timer Maker の使い方" aria-haspopup="dialog">Robocon Timer Maker<span class="version">V1.37</span></button></h1><p class="subtitle">タイマーに進行を合わせて、ロボコン大会を盛り上げよう！</p></div></div><div class="top-actions"><button id="externalInfo" class="small" aria-haspopup="dialog">ⓘ 外部通信・ライセンス</button><button id="topFullscreen" class="small">全画面にする</button></div></header>
 <main class="layout">
 <div class="preview-column">
 <section class="panel" aria-label="タイマー表示">
@@ -67,7 +67,7 @@
 
 <section class="panel"><div class="section"><h2 class="section-title">BGMと分の合図</h2><div class="music-options"><label class="checkline"><input id="bgmMatchEnabled" type="checkbox" checked>試合中BGM</label><label class="checkline"><input id="bgmIntervalEnabled" type="checkbox" checked>試合間BGM</label><label class="checkline" title="試合間に1分ごとにピアノ音"><input id="minutePiano" type="checkbox" checked aria-label="試合間に1分ごとにピアノ音">ピアノ音</label></div><label class="field" style="margin-top:13px">試合中BGMの曲<select id="bgmMatchTrack"><option value="B" selected>鋼の疾走</option><option value="C">回路のパレード</option></select></label><label class="field" style="margin-top:13px"><span class="line"><span>試合中BGMの音量</span><output id="bgmMatchVolumeLabel">35%</output></span><input id="bgmMatchVolume" aria-label="試合中BGMの音量" type="range" min="0" max="100" value="35"></label><label class="field" style="margin-top:13px"><span class="line"><span>試合間BGMの音量</span><output id="bgmIntervalVolumeLabel">15%</output></span><input id="bgmIntervalVolume" aria-label="試合間BGMの音量" type="range" min="0" max="100" value="15"></label><label class="field" style="margin-top:13px"><span class="line"><span>ピアノ音の音量</span><output id="pianoVolumeLabel">35%</output></span><input id="pianoVolume" aria-label="ピアノ音の音量" type="range" min="0" max="100" value="35"></label><p class="note" style="margin:6px 0 0">次の開始まで残り○分の区切りに鳴ります。</p><div class="sounds"><button type="button" data-music="match">試合中BGM ▶</button><button type="button" data-music="interval">試合間BGM ▶</button><button type="button" data-music="piano">ピアノ音 ▶</button><button type="button" id="stopMusicAudition">試聴停止 ■</button></div><div id="musicStatus" class="note" role="status" style="margin-top:9px">BGM待機中</div></div></section></div></fieldset></aside>
 </main>
-<footer class="footer"><span>Robocon Timer Maker V1.36 · インターネット接続不要</span><span>別のタブでも進行を続けます。停止・終了には確認が表示されます。</span></footer>
+<footer class="footer"><span>Robocon Timer Maker V1.37 · インターネット接続不要</span><span>別のタブでも進行を続けます。停止・終了には確認が表示されます。</span></footer>
 
 <dialog id="settingsConfirm" class="info-dialog" aria-labelledby="settingsConfirmTitle" aria-describedby="settingsConfirmMessage"><h2 id="settingsConfirmTitle">登録設定の確認</h2><p id="settingsConfirmMessage"></p><div class="info-actions"><form method="dialog"><button id="settingsConfirmCancel" value="cancel" autofocus>キャンセル</button><button id="settingsConfirmOK" value="ok" class="primary">確認</button></form></div></dialog>
 <dialog id="stopConfirm" class="info-dialog" aria-labelledby="stopConfirmTitle" aria-describedby="stopConfirmMessage"><h2 id="stopConfirmTitle">タイマーを止めますか？</h2><p id="stopConfirmMessage"></p><p class="note" id="stopConfirmNote">確認中もタイマーと音は進行しています。</p><div class="info-actions"><form method="dialog"><button id="keepRunning" value="cancel" autofocus>進行を続ける</button><button id="confirmStop" class="danger" value="ok">一時停止する</button></form></div></dialog>
@@ -292,6 +292,18 @@ class AudioEngine {
   if(!this.loading)this.loading=Promise.all(Object.entries(this.data).flatMap(([bank,clips])=>Object.entries(clips).map(async([key,value])=>{const raw=atob(value.data),bytes=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);this.buffers[bank+':'+key]=await this.context.decodeAudioData(bytes.buffer);}))).catch(e=>{this.loading=null;throw e;});
   await this.loading;
  }
+ async warmUpOutput(){
+  // Keep the output graph active before the first cue. A resumed context can
+  // be running before the device has settled; this silence is outside timer time.
+  const silence=this.context.createConstantSource();let closed=false;
+  const close=()=>{if(closed)return;closed=true;silence.stop();silence.disconnect();};
+  silence.offset.value=0;silence.connect(this.output);silence.start();
+  try{
+   await new Promise(resolve=>setTimeout(resolve,600));
+   if(this.context.state!=='running')throw Error('音声出力が停止しています。もう一度開始してください。');
+   return close;
+  }catch(e){close();throw e;}
+ }
  beginRecording(){
   const destination=this.context.createMediaStreamDestination(),silence=this.context.createConstantSource();
   // A live zero-valued source keeps PCM flowing during long silent intervals.
@@ -410,7 +422,7 @@ async function requestWake(){
 }
 function releaseWake(){const lock=wake;wake=null;if(lock)lock.release().catch(()=>{});}
 
-function updateControls(){const running=mode==='running',locked=running||mode==='paused';$('status').dataset.status=mode;$('statusText').textContent=running?phaseNames[Core.stateAt(config,elapsed).phase]:mode==='paused'?'一時停止中':mode==='done'?'進行終了':'開始待ち';$('toggle').textContent=running?'一時停止':mode==='paused'?'再開':mode==='done'?'もう一度開始':'進行を開始';$('fsToggle').textContent=running?'一時停止':mode==='paused'?'再開':'開始';$('reset').disabled=mode==='ready';$('settingsFields').disabled=false;for(const el of $('settingsFields').querySelectorAll('input,select,button'))el.disabled=!!(starting||exportJob||mode==='done'||(locked&&!['bgmMatchEnabled','bgmIntervalEnabled','bgmMatchVolume','bgmIntervalVolume','pianoVolume','minutePiano','volume','bgmMatchTrack'].includes(el.id)));$('toggle').disabled=!!exportJob;$('fsToggle').disabled=!!exportJob;$('reset').disabled=!!exportJob||mode==='ready';$('exportVideo').disabled=!!exportJob||locked||starting||mode==='done'||!exportMime;$('cancelExport').hidden=!exportJob;$('seek').disabled=!!exportJob||starting||!!configErrors.length;$('lockNote').hidden=!locked||!!exportJob;presetControls();}
+function updateControls(){const running=mode==='running',locked=running||mode==='paused';$('status').dataset.status=mode;$('statusText').textContent=starting?'開始準備中…':running?phaseNames[Core.stateAt(config,elapsed).phase]:mode==='paused'?'一時停止中':mode==='done'?'進行終了':'開始待ち';$('toggle').textContent=starting?'開始準備中…':running?'一時停止':mode==='paused'?'再開':mode==='done'?'もう一度開始':'進行を開始';$('fsToggle').textContent=starting?'開始準備中…':running?'一時停止':mode==='paused'?'再開':'開始';$('reset').disabled=mode==='ready';$('settingsFields').disabled=false;for(const el of $('settingsFields').querySelectorAll('input,select,button'))el.disabled=!!(starting||exportJob||mode==='done'||(locked&&!['bgmMatchEnabled','bgmIntervalEnabled','bgmMatchVolume','bgmIntervalVolume','pianoVolume','minutePiano','volume','bgmMatchTrack'].includes(el.id)));$('toggle').disabled=starting||!!exportJob;$('fsToggle').disabled=starting||!!exportJob;$('reset').disabled=starting||!!exportJob||mode==='ready';$('exportVideo').disabled=!!exportJob||locked||starting||mode==='done'||!exportMime;$('cancelExport').hidden=!exportJob;$('seek').disabled=!!exportJob||starting||!!configErrors.length;$('lockNote').hidden=!locked||!!exportJob;presetControls();}
 let starting=false,exportJob=null,exportURL=null;
 const exportMime=typeof MediaRecorder!=='undefined'?['video/mp4;codecs="avc1.42E028,mp4a.40.2"','video/mp4;codecs="avc1,mp4a.40.2"','video/mp4'].find(t=>MediaRecorder.isTypeSupported(t)):null;
 function updateExportSupport(){
@@ -426,7 +438,7 @@ async function startExport(){
   recordingAudio=audio.beginRecording();
   const video=canvas.captureStream(30),stream=new MediaStream([...video.getVideoTracks(),...recordingAudio.stream.getAudioTracks()]);
   let recorder;try{recorder=new MediaRecorder(stream,{mimeType:exportMime,videoBitsPerSecond:4500000,audioBitsPerSecond:192000});}catch(e){stream.getTracks().forEach(t=>t.stop());throw e;}
-  const job=exportJob={recorder,stream,recordingAudio,chunks:[],cancelled:false,done:false,fileName:'Robocon_Timer_V1.36_'+Math.floor(config.cycle/60)+'m'+(config.cycle%60)+'s.mp4'};
+  const job=exportJob={recorder,stream,recordingAudio,chunks:[],cancelled:false,done:false,fileName:'Robocon_Timer_V1.37_'+Math.floor(config.cycle/60)+'m'+(config.cycle%60)+'s.mp4'};
   recorder.ondataavailable=e=>{if(e.data.size)job.chunks.push(e.data);};
   recorder.onerror=()=>cancelExport('MP4の書き出しに失敗しました。ブラウザーの対応状況と空きメモリーを確認してください。');
   recorder.onstop=()=>{
@@ -467,11 +479,29 @@ function beginMp4Save(blob,fileName){
  try{link.click();}finally{link.remove();}
  // Retain the URL until the next export, allowing large downloads to finish.
 }
-async function toggle(){if(starting||exportJob)return;if(seekGesture)finishSeek(false);if(mode==='running'){if(await confirmTimerStop()&&mode==='running')pause(false);return;}if(mode==='ready'){if(!updateConfig(true))return;audio.stop(0,true);}if(mode==='done'){elapsed=0;audio.stop(0,true);}starting=true;$('seek').disabled=true;$('settingsFields').disabled=true;$('toggle').disabled=true;$('fsToggle').disabled=true;try{if(!Core.isSilent(config))await audio.init();if(document.visibilityState!=='visible')throw Error('タイマーのタブを表示してから開始してください。');notify('');anchor=performance.now()-elapsed*1000;lastFrame=performance.now();lastWall=Date.now();mode='running';updateControls();startAudioClock();requestWake();frameHandle=requestAnimationFrame(tick);}catch(e){notify('音の準備または開始に失敗しました。'+e.message,'error');}finally{starting=false;updateControls();$('toggle').disabled=false;$('fsToggle').disabled=false;}}
+async function toggle(){
+ if(starting||exportJob)return;
+ if(seekGesture)finishSeek(false);
+ if(mode==='running'){if(await confirmTimerStop()&&mode==='running')pause(false);return;}
+ const freshStart=mode==='ready'||mode==='done';
+ if(mode==='ready'){if(!updateConfig(true))return;audio.stop(0,true);}
+ if(mode==='done'){elapsed=0;audio.stop(0,true);}
+ auditionRequest++;starting=true;updateControls();let closeWarmup=null;
+ try{
+  if(!Core.isSilent(config)){
+   await audio.init();
+   if(freshStart)closeWarmup=await audio.warmUpOutput();
+  }
+  if(document.visibilityState!=='visible')throw Error('タイマーのタブを表示してから開始してください。');
+  notify('');anchor=performance.now()-elapsed*1000;lastFrame=performance.now();lastWall=Date.now();mode='running';
+  updateControls();startAudioClock();requestWake();frameHandle=requestAnimationFrame(tick);
+ }catch(e){notify('音の準備または開始に失敗しました。'+e.message,'error');}
+ finally{closeWarmup?.();starting=false;updateControls();}
+}
 function checkStall(now){if(exportJob&&lastFrame&&(now-lastFrame>2200||Date.now()-lastWall>2200)){cancelExport('画面の更新が止まったため、MP4の書き出しを中止しました。書き出し中はこのタブを表示してください。');return true;}return false;}
 function tick(now){if(mode!=='running'||checkStall(now))return;lastFrame=now;lastWall=Date.now();elapsed=(now-anchor)/1000;if(exportJob){const pct=Math.min(100,elapsed/config.cycle*100);$('exportBar').value=pct;$('exportStatus').textContent=`書き出し中 ${positionText(Math.min(elapsed,config.cycle))} / ${positionText(config.cycle)}（${Math.floor(pct)}%）`;if(elapsed>=config.cycle){finishExport();return;}}if(!config.repeat&&elapsed>=config.cycle){advanceTimer();return;}draw();frameHandle=requestAnimationFrame(tick);}
 function pause(forced=false,message=''){if(exportJob){cancelExport(message||'書き出しを中止しました。');return;}if(mode!=='running')return;if(!forced)elapsed=liveElapsed();mode='paused';cancelAnimationFrame(frameHandle);clearInterval(audioClockTimer);audio.stop(elapsed);releaseWake();draw();updateControls();$('wakeStatus').textContent='再開すると、停止した続きから進行します。';if(message)notify(message,'warn');}
-async function reset(){if(exportJob)return;if((mode==='running'||mode==='paused')&&!await confirmTimerStop(true))return;if(exportJob)return;seekGesture=null;mode='ready';elapsed=0;lastPhase='';cancelAnimationFrame(frameHandle);clearInterval(audioClockTimer);audio.stop(0,true);releaseWake();notify('');$('wakeStatus').textContent='設定を確認して、進行を開始してください。';updateControls();updateConfig();draw();}
+async function reset(){if(starting||exportJob)return;if((mode==='running'||mode==='paused')&&!await confirmTimerStop(true))return;if(exportJob)return;seekGesture=null;mode='ready';elapsed=0;lastPhase='';cancelAnimationFrame(frameHandle);clearInterval(audioClockTimer);audio.stop(0,true);releaseWake();notify('');$('wakeStatus').textContent='設定を確認して、進行を開始してください。';updateControls();updateConfig();draw();}
 function positionText(seconds){const total=Math.max(0,Math.floor(seconds+1e-6));return `${Math.floor(total/60)}:${String(total%60).padStart(2,'0')}`;}
 function renderSeek(state=Core.stateAt(config,elapsed)){const range=$('seek');range.max=config.cycle;if(!seekGesture)range.value=state.done?config.cycle:state.t;const position=Number(range.value);range.style.setProperty('--position',`${position/config.cycle*100}%`);$('seekTime').textContent=`${positionText(position)} / ${positionText(config.cycle)}`;$('seekPhase').textContent=`第${seekGesture?seekGesture.cycleIndex+1:state.round}試合・${phaseNames[state.phase]}`;range.setAttribute('aria-valuetext',`${positionText(position)} / ${positionText(config.cycle)}、${phaseNames[state.phase]}`);}
 function beginSeek(source){if(exportJob||starting||$('seek').disabled||seekGesture)return;const wasRunning=mode==='running';const base=liveElapsed();seekGesture={source,wasRunning,base,cycleIndex:config.repeat?Math.floor(base/config.cycle):0};if(wasRunning)pause(false);}
@@ -561,7 +591,7 @@ if(bootSettingsErrors.length)setTimeout(()=>notify(bootSettingsErrors.join('\n')
  });
  document.getElementById('downloadApp').addEventListener('click',()=>{
   const url=URL.createObjectURL(new Blob([appSource],{type:'text/html;charset=utf-8'}));
-  const link=document.createElement('a');link.href=url;link.download='ロボコンタイマー_V1.36.html';
+  const link=document.createElement('a');link.href=url;link.download='ロボコンタイマー_V1.37.html';
   document.body.append(link);link.click();link.remove();
   setTimeout(()=>URL.revokeObjectURL(url),60000);
  });
