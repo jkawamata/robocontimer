@@ -8,7 +8,7 @@
 
 **[アプリを開く](https://jkawamata.github.io/robocontimer/)** · [GitHubリポジトリ](https://github.com/jkawamata/robocontimer)
 
-現在のバージョン：**V1.41** ／ 作者：**川俣純**
+現在のバージョン：**V1.42** ／ 作者：**川俣純**
 
 ## 主な機能
 
